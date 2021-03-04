@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>C_Test</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="common.css">
+	<style>
+		input[type=radio]{
+			margin-right: 5px;
+			margin-bottom: 10px;
+			transform: scale(1.5);
+		}
+		li{
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body class="back" style="color: black;">
+	<header>
+		<div align="center" class="head">
+			<h1 style="margin-top: 2px; text-align: left;">Online MCQ Test</h1>
+			<h3 id="clockdiv" style="margin-top: -48px; text-align: right;"></h3>
+		</div>
+		<div>
+			<h1 class="blink" style="text-align: center; color: #00004d; font-weight: bolder;"><u>C Language Quiz</u></h1>
+		</div>
+	</header>
+	<div class="container" align="center" style="width: 80%;">
+		<div class="row" style="opacity: 0.85;">
+			<ol style="text-align: left; font-size: 150%; margin-bottom: 20px;">
+				<div>
+					<div id="111" >
+						<li id="10">What is the 16-bit compiler allowable range for integer constants?</li>
+						<div>
+							<input type="radio" value="11" name="ques01">-3.4e38 to 3.4e38<br>
+							<input type="radio" value="12" name="ques01">-32767 to 32768<br>
+							<input type="radio" value="13" name="ques01">-32668 to 32667<br>
+							<input type="radio" value="14" name="ques01">-32768 to 32767<br>
+						</div>
+						<hr>
+					</div>
+					<div id="222" hidden="true">
+						<li id="20">What is required in each C program?</li>
+						<div>
+							<input type="radio" value="21" name="ques02">The program must have at least one function.<br>
+							<input type="radio" value="22" name="ques02">The program does not require any function.<br>
+							<input type="radio" value="23" name="ques02">Input data<br>
+							<input type="radio" value="24" name="ques02">Output data<br>
+						</div>
+						<hr>
+					</div>
+					<div id="3" hidden>
+						<li id="30">Which of the following comment is correct when a macro definition includes arguments?</li>
+						<div>
+							<input type="radio" value="31" name="ques03">The opening parenthesis should immediately follow the macro name.<br>
+							<input type="radio" value="32" name="ques03">There should be at least one blank between the macro name and the opening parenthesis.<br>
+							<input type="radio" value="33" name="ques03">There should be only one blank between the macro name and the opening parenthesis.<br>
+							<input type="radio" value="34" name="ques03">All the above comments are correct.<br>
+						</div>
+						<hr>
+					</div>
+					<div id="q4" hidden>
+						<li id="4">What is a lint?</li>
+						<div>
+							<input type="radio" value="41" name="ques04">C compiler<br>
+							<input type="radio" value="42" name="ques04">Interactive debugger<br>
+							<input type="radio" value="43" name="ques04">Analyzing tool<br>
+							<input type="radio" value="44" name="ques04">C interpreter<br>
+						</div>
+						<hr>
+					</div>
+					<div id="q5" hidden> 
+						<li id="5">What does this declaration mean --> int x : 4; </li>
+						<div>
+							<input type="radio" value="51" name="ques05">X is a four-digit integer.<br>
+							<input type="radio" value="52" name="ques05">X cannot be greater than a four-digit integer.<br>
+							<input type="radio" value="53" name="ques05">X is a four-bit integer.<br>
+							<input type="radio" value="54" name="ques05">None of the these<br>
+						</div>
+						<hr>
+					</div>
+					<div id="q6" hidden>
+						<li id="6">Why is a macro used in place of a function?</li>
+						<div>
+							<input type="radio" value="61" name="ques06">It reduces execution time.<br>
+							<input type="radio" value="62" name="ques06">It reduces code size.<br>
+							<input type="radio" value="63" name="ques06">It increases execution time.<br>
+							<input type="radio" value="64" name="ques06">It increases code size.<br>
+						</div>
+						<hr>
+					</div>
+					<div id="q7" hidden>
+						<li id="7">In the C language, the constant is defined _______.?</li>
+						<div>
+							<input type="radio" value="71" name="ques07">Before main<br>
+							<input type="radio" value="72" name="ques07">After main<br>
+							<input type="radio" value="73" name="ques07">Anywhere, but starting on a new line.<br>
+							<input type="radio" value="74" name="ques07">None of the these.<br>
+						</div>
+						<hr>
+					</div>
+					<div id="q8" hidden>
+						<li id="8">Which one of the following is a loop construct that will always be executed once?</li>
+						<div>
+							<input type="radio" value="81" name="ques08">for<br>
+							<input type="radio" value="82" name="ques08">while<br>
+							<input type="radio" value="83" name="ques08">switch<br>
+							<input type="radio" value="84" name="ques08">do while<br>
+						</div>
+						<hr>
+					</div>
+					<div id="q9" hidden>
+						<li id=9>Which of the following will copy the null-terminated string that is in array src into array dest?</li>
+						<div>
+							<input type="radio" value="91" name="ques09">dest = src;<br>
+							<input type="radio" value="92" name="ques09">dest == src;<br>
+							<input type="radio" value="93" name="ques09">strcpy(dest, src);<br>
+							<input type="radio" value="94" name="ques09">strcpy(src, dest);<br>
+						</div>
+						<hr>
+					</div>
+					<div id="q10" hidden>
+						<li id="10">What is the maximum number of characters that can be held in the string variable char address line [40]?</li>
+						<div>
+							<input type="radio" value="101" name="ques10">38<br>
+							<input type="radio" value="102" name="ques10">39<br>
+							<input type="radio" value="103" name="ques10">40<br>
+							<input type="radio" value="104" name="ques10">41<hr>
+							<div align="center">
+								<button onclick="eval_ans()" id="button_lang" value="C" style="width: 300px; font-weight: bolder; font-size: 200%;margin-top: 10px; background-color: #6699ff; border-radius: 10px;">
+									Finish Test !!!
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</ol>
+			<button onclick="prev_que()" id="button_prev" value="pq" style="width: 300px; font-weight: bolder; font-size: 200%;margin-top: 10px; background-color: #6699ff; border-radius: 10px;">
+				Previous
+			</button>	
+			<button onclick="next_que()" id="button_next" value="nq" style="width: 300px; font-weight: bolder; font-size: 200%;margin-top: 10px; background-color: #6699ff; border-radius: 10px;">
+				Next
+			</button>	
+		</div>
+	</div>
+	<footer class="foot">
+		<p><b>Developed by :</b> Arvind | Richa || LGSIA-Model Team</p>
+	</footer>
+	<script type="text/javascript" src="eval_ans.js"></script>
+	<script type="text/javascript" src="timer.js"></script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS_Test</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="common.css">
+	<style>
+		input[type=radio]{
+			margin-right: 5px;
+			margin-bottom: 10px;
+			transform: scale(1.5);
+		}
+		li{
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body class="back" style="color: black;">
+	<header>
+		<div align="center" class="head">
+			<h1 style="margin-top: 2px; text-align: left;">Online MCQ Test</h1>
+			<h3 id="clockdiv" style="margin-top: -48px; text-align: right;"></h3>
+		</div>
+	</header>
+	<div class="container" align="center" style="width: 70%;">
+		<div class="row" style="background-color: lightblue; margin-top: 20px; border: 3px solid blue; border-radius: 10px; opacity: 0.85;">
+			<ol style="text-align: left; font-size: 150%; margin-bottom: 20px;">
+				<div>
+					<div>
+						<li id="1">What does CSS stand for?</li>
+						<div>
+							<input type="radio" id="11" name="ques01">Creative Style Sheets<br>
+							<input type="radio" id="12" name="ques01">Colorful Style Sheets<br>
+							<input type="radio" id="13" name="ques01">Computer Style Sheets<br>
+							<input type="radio" id="14" name="ques01">Cascading Style Sheets<br>
+						</div>
+					</div>
+					<hr>
+					<div>
+						<li id="2">The _____ property is used to set the color of the text.</li>
+						<div>
+							<input type="radio" id="21" name="ques02">pallet<br>
+							<input type="radio" id="22" name="ques02">colour<br>
+							<input type="radio" id="23" name="ques02">color<br>
+							<input type="radio" id="24" name="ques02">text-decoration<br>
+						</div>
+					</div>
+					<hr>
+					<div>
+						<li id="3">Which of the following is the correct way to apply Styles?</li>
+						<div>
+							<input type="radio" id="31" name="ques03">inside an HTML element<br>
+							<input type="radio" id="32" name="ques03">inside the section of an HTML page<br>
+							<input type="radio" id="33" name="ques03">in an external CSS file<br>
+							<input type="radio" id="34" name="ques03">all of the mentioned<br>
+						</div>
+					</div>
+					<hr>
+					<div>
+						<li id="4">A _____ is used to define a special state of an element.</li>
+						<div>
+							<input type="radio" id="41" name="ques04">pseudo-tag<br>
+							<input type="radio" id="42" name="ques04">pseudo-element<br>
+							<input type="radio" id="43" name="ques04">pseudo-id<br>
+							<input type="radio" id="44" name="ques04">pseudo-class<br>
+						</div>
+					</div>
+					<hr>
+					<div>
+						<li id="5">Which property is used to add space inside the text field?</li>
+						<div>
+							<input type="radio" id="51" name="ques05">padding<br>
+							<input type="radio" id="52" name="ques05">margin<br>
+							<input type="radio" id="53" name="ques05">number<br>
+							<input type="radio" id="54" name="ques05">password<br>
+						</div>
+					</div>
+					<hr>
+					<div>
+						<li id="6">Which of the following is not an attribute of <q>form</q> tag?</li>
+						<div>
+							<input type="radio" id="61" name="ques06">Action<br>
+							<input type="radio" id="62" name="ques06">Method<br>
+							<input type="radio" id="63" name="ques06">name<br>
+							<input type="radio" id="64" name="ques06">url<br>
+						</div>
+					</div>
+					<hr>
+					<div>
+						<li id="7">Which one can animate the width of search input when get focus?</li>
+						<div>
+							<input type="radio" id="71" name="ques07">focus<br>
+							<input type="radio" id="72" name="ques07">transition<br>
+							<input type="radio" id="73" name="ques07">outline<br>
+							<input type="radio" id="74" name="ques07">color<br>
+						</div>
+					</div>
+					<hr>
+					<div>
+						<li id="8">Which of the following will insert generated content in the counter?</li>
+						<div>
+							<input type="radio" id="81" name="ques08">content<br>
+							<input type="radio" id="82" name="ques08">counter-reset<br>
+							<input type="radio" id="83" name="ques08">counter-increment<br>
+							<input type="radio" id="84" name="ques08">counter()<br>
+						</div>
+					</div>
+					<hr>
+					<div>
+						<li id=9>Which of the following is an extension to the common JavaScript framework?</li>
+						<div>
+							<input type="radio" id="91" name="ques09">Niceforms<br>
+							<input type="radio" id="92" name="ques09">Uni-forms<br>
+							<input type="radio" id="93" name="ques09">Formalize<br>
+							<input type="radio" id="94" name="ques09">jQuery UI<br>
+						</div>
+					</div>
+					<hr>
+					<div>
+						<li id="10">Which of the following helps to deal with HTML5 support?</li>
+						<div>
+							<input type="radio" id="101" name="ques10">Twitter Bootstrap<br>
+							<input type="radio" id="102" name="ques10">WebShim<br>
+							<input type="radio" id="103" name="ques10">jQuery UI<br>
+							<input type="radio" id="104" name="ques10">Niceforms<hr>
+							<div align="center">
+								<button style="width: 300px; font-weight: bolder; font-size: 200%;margin-top: 10px; background-color: #6699ff; border-radius: 10px;">
+									Finish Test !!!
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</ol>		
+		</div>
+	</div>
+	<script>
+        // 05 minutes from now
+        var time_in_minutes = 05;
+        var current_time = Date.parse(new Date());
+        var deadline = new Date(current_time + time_in_minutes*60*1000);
+
+
+        function time_remaining(endtime){
+          var t = Date.parse(endtime) - Date.parse(new Date());
+          var seconds = Math.floor( (t/1000) % 60 );
+          var minutes = Math.floor( (t/1000/60) % 60 );
+          var hours = Math.floor( (t/(1000*60*60)) % 24 );
+          var days = Math.floor( t/(1000*60*60*24) );
+          return {'total':t, 'days':days, 'hours':hours, 'minutes':minutes, 'seconds':seconds};
+        }
+        function run_clock(id,endtime){
+          var clock = document.getElementById(id);
+          function update_clock(){
+            var t = time_remaining(endtime);
+            clock.innerHTML = "Time Remaining - "+t.minutes+' M : '+t.seconds+' S';
+            if(t.total<=0){ clearInterval(timeinterval); }
+          }
+          update_clock(); // run function once at first to avoid delay
+          var timeinterval = setInterval(update_clock,1000);
+        }
+        run_clock('clockdiv',deadline);
+	</script>
+</body>
+</html>

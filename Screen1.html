@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Screen1</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="common.css">
+	<style>
+		.subject{
+			font-size: 150%;
+			text-align: left;
+			font-weight: bolder;
+			width: 35%;
+			margin-top: 20px;
+		}
+		input[type=radio]{
+			transform:scale(2);
+			margin-right: 5px;
+			margin-left: 5px;
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body class="back">
+	<header>
+		<div align="center" class="head">
+			<h1 style="margin-top: 2px; margin-bottom: 2px;">Online MCQ Test</h1>
+		</div>
+	</header>
+	<div class="container" align="center">
+		<div class="row">
+			<img src="quiztime.gif" style="width: 40%; border-radius: 15px; margin-top: 5px;">
+			<h1 class="blink" style="font-size: 400%;">Please Select Subject</h1>
+			<div class="subject">
+				<div>
+					<input type="radio" id="C_Sub" name="sub" value="C Language"> C Language<br>
+					<input type="radio" id="C++_Sub" name="sub" value="C++ Language"> C++ Language<br>
+					<input type="radio" id="Java_Sub" name="sub" value="Java Language"> Java Language<br>
+					<input type="radio" id="JS_Sub" name="sub" value="JavaScript Language"> JavaScript Language<br>
+				</div>
+			</div>
+			<div>
+				<button class="blink" onclick="choose_lang()" style="width: 200px; font-weight: bolder; font-size: 300%; margin-top: 22px; margin-bottom: 5px; background-color: #6699ff; border-radius: 10px;">
+				Next
+				</button>
+			</div>
+		</div>
+	</div>
+	<footer class="foot">
+		<p><b>Developed by :</b> Arvind | Richa || LGSIA-Model Team</p>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>

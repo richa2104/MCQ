@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Java_Test</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="common.css">
+	<style>
+		input[type=radio]{
+			margin-right: 5px;
+			margin-bottom: 10px;
+			transform: scale(1.5);
+		}
+		li{
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body class="back" style="color: black;">
+	<header>
+		<div align="center" class="head">
+			<h1 style="margin-top: 2px; text-align: left;">Online MCQ Test</h1>
+			<h3 id="clockdiv" style="margin-top: -48px; text-align: right;"></h3>
+		</div>
+		<div>
+			<h1 class="blink" style="text-align: center; color: #00004d; font-weight: bolder;"><u>Java Language Quiz</u></h1>
+		</div>
+	</header>
+	<div class="container" align="center" style="width: 80%;">
+		<div class="row" style="opacity: 0.85;">
+			<ol style="text-align: left; font-size: 150%; margin-bottom: 20px;">
+				<div>
+					<div>
+						<li id="1">Which of the following option leads to the portability and security of Java?</li>
+						<div id="01">
+							<input type="radio" value="11" name="ques01">Bytecode is executed by JVM<br>
+							<input type="radio" value="12" name="ques01">The applet makes the Java code secure and portable<br>
+							<input type="radio" value="13" name="ques01">Use of exception handling<br>
+							<input type="radio" value="14" name="ques01">Dynamic binding between objects<br>
+						</div>
+					</div>
+					<hr>
+					<div>
+						<li id="2">Which of the following is not a Java features?</li>
+						<div>
+							<input type="radio" value="21" name="ques02">Dynamic<br>
+							<input type="radio" value="22" name="ques02">Architecture Neutral<br>
+							<input type="radio" value="23" name="ques02">Use of pointers<br>
+							<input type="radio" value="24" name="ques02">Object-oriented<br>
+						</div>
+					</div>
+					<hr>
+					<div>
+						<li id="3">The \u0021 article referred to as a</li>
+						<div>
+							<input type="radio" value="31" name="ques03">Unicode escape sequence<br>
+							<input type="radio" value="32" name="ques03">Octal escape<br>
+							<input type="radio" value="33" name="ques03">Hexadecimal<br>
+							<input type="radio" value="34" name="ques03">Line feed<br>
+						</div>
+					</div>
+					<hr>
+					<div>
+						<li id="4">_____ is used to find and fix bugs in the Java programs.</li>
+						<div>
+							<input type="radio" value="41" name="ques04">JVM<br>
+							<input type="radio" value="42" name="ques04">JRE<br>
+							<input type="radio" value="43" name="ques04">JDK<br>
+							<input type="radio" value="44" name="ques04">JDB<br>
+						</div>
+					</div>
+					<hr>
+					<div>
+						<li id="5">What is the return type of the hashCode() method in the Object class?</li>
+						<div>
+							<input type="radio" value="51" name="ques05">Object<br>
+							<input type="radio" value="52" name="ques05">int<br>
+							<input type="radio" value="53" name="ques05">long<br>
+							<input type="radio" value="54" name="ques05">void<br>
+						</div>
+					</div>
+					<hr>
+					<div>
+						<li id="6">Which of the following is a valid long literal?</li>
+						<div>
+							<input type="radio" value="61" name="ques06">ABH8097<br>
+							<input type="radio" value="62" name="ques06">L990023<br>
+							<input type="radio" value="63" name="ques06">904423<br>
+							<input type="radio" value="64" name="ques06">0xnf029L<br>
+						</div>
+					</div>
+					<hr>
+					<div>
+						<li id="7">What does the expression float a = 35 / 0 return?</li>
+						<div>
+							<input type="radio" value="71" name="ques07">0<br>
+							<input type="radio" value="72" name="ques07">Not a Number<br>
+							<input type="radio" value="73" name="ques07">Infinity<br>
+							<input type="radio" value="74" name="ques07">Run time exception<br>
+						</div>
+					</div>
+					<hr>
+					<div>
+						<li id="8">Which method of the Class.class is used to determine the name of a class represented by the class object as a String?</li>
+						<div>
+							<input type="radio" value="81" name="ques08">getClass()<br>
+							<input type="radio" value="82" name="ques08">intern()<br>
+							<input type="radio" value="83" name="ques08">getName()<br>
+							<input type="radio" value="84" name="ques08">toString()<br>
+						</div>
+					</div>
+					<hr>
+					<div>
+						<li id=9>In which process, a local variable has the same name as one of the instance variables?</li>
+						<div>
+							<input type="radio" value="91" name="ques09">Serialization<br>
+							<input type="radio" value="92" name="ques09">Variable Shadowing<br>
+							<input type="radio" value="93" name="ques09">Abstraction<br>
+							<input type="radio" value="94" name="ques09">Multi-threading<br>
+						</div>
+					</div>
+					<hr>
+					<div>
+						<li id="10">Which of the following is true about the anonymous inner class?</li>
+						<div>
+							<input type="radio" value="101" name="ques10">It has only methods<br>
+							<input type="radio" value="102" name="ques10">Objects can't be created<br>
+							<input type="radio" value="103" name="ques10">It has a fixed class name<br>
+							<input type="radio" value="104" name="ques10">It has no class name<hr>
+							<div align="center">
+								<button onclick="eval_ans()" id="button_lang" value="Java" style="width: 300px; font-weight: bolder; font-size: 200%;margin-top: 10px; background-color: #6699ff; border-radius: 10px;">
+									Finish Test !!!
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</ol>		
+		</div>
+	</div>
+	<footer class="foot">
+		<p><b>Developed by :</b> Arvind | Richa || LGSIA-Model Team</p>
+	</footer>
+	<script type="text/javascript" src="eval_ans.js"></script>
+	<script type="text/javascript" src="timer.js"></script>
+</body>
+</html>

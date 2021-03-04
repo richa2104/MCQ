@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>C++_Test</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="common.css">
+	<style>
+		input[type=radio]{
+			margin-right: 5px;
+			margin-bottom: 10px;
+			transform: scale(1.5);
+		}
+		li{
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body class="back" style="color: black;">
+	<header>
+		<div align="center" class="head">
+			<h1 style="margin-top: 2px; text-align: left;">Online MCQ Test</h1>
+			<h3 id="clockdiv" style="margin-top: -48px; text-align: right;"></h3>
+		</div>
+		<div>
+			<h1 class="blink" style="text-align: center; color: #00004d; font-weight: bolder;"><u>C++ Language Quiz</u></h1>
+		</div>
+	</header>
+	<div class="container" align="center" style="width: 80%;">
+		<div class="row" style="opacity: 0.85;">
+			<ol style="text-align: left; font-size: 150%; margin-bottom: 20px;">
+				<div>
+					<div>
+						<li id="1">A trigraph character begins with</li>
+						<div>
+							<input type="radio" value="11" name="ques01">#<br>
+							<input type="radio" value="12" name="ques01">##<br>
+							<input type="radio" value="13" name="ques01">?<br>
+							<input type="radio" value="14" name="ques01">??<br>
+						</div>
+					</div>
+					<hr>
+					<div>
+						<li id="2">By default the members of the structure are</li>
+						<div>
+							<input type="radio" value="21" name="ques02">private<br>
+							<input type="radio" value="22" name="ques02">protected<br>
+							<input type="radio" value="23" name="ques02">public<br>
+							<input type="radio" value="24" name="ques02">Access specifiers not applicable for structures<br>
+						</div>
+					</div>
+					<hr>
+					<div>
+						<li id="3">Class function which is called automatically as soon as the object is created is called as __</li>
+						<div>
+							<input type="radio" value="31" name="ques03">Constructor<br>
+							<input type="radio" value="32" name="ques03">Destructor<br>
+							<input type="radio" value="33" name="ques03">Friend function<br>
+							<input type="radio" value="34" name="ques03">Inline function<br>
+						</div>
+					</div>
+					<hr>
+					<div>
+						<li id="4">Which operator is used to resolve the scope of the global variable?</li>
+						<div>
+							<input type="radio" value="41" name="ques04">- −><br>
+							<input type="radio" value="42" name="ques04">- .<br>
+							<input type="radio" value="43" name="ques04">- *<br>
+							<input type="radio" value="44" name="ques04">- ::<br>
+						</div>
+					</div>
+					<hr>
+					<div>
+						<li id="5">Which type of data file is analogous to an audio cassette tape?</li>
+						<div>
+							<input type="radio" value="51" name="ques05">Random access file<br>
+							<input type="radio" value="52" name="ques05">Sequential access file<br>
+							<input type="radio" value="53" name="ques05">Binary file<br>
+							<input type="radio" value="54" name="ques05">Source code file<br>
+						</div>
+					</div>
+					<hr>
+					<div>
+						<li id="6">Choose the invalid identifier from the below</li>
+						<div>
+							<input type="radio" value="61" name="ques06">Int<br>
+							<input type="radio" value="62" name="ques06">bool<br>
+							<input type="radio" value="63" name="ques06">DOUBLE<br>
+							<input type="radio" value="64" name="ques06">__0__<br>
+						</div>
+					</div>
+					<hr>
+					<div>
+						<li id="7">C++ is an alias of C# ?</li>
+						<div>
+							<input type="radio" value="71" name="ques07">False<br>
+							<input type="radio" value="72" name="ques07">True<br>
+						</div>
+					</div>
+					<hr>
+					<div>
+						<li id="8">Which of the following approach is adapted by C++?</li>
+						<div>
+							<input type="radio" value="81" name="ques08">Top-down<br>
+							<input type="radio" value="82" name="ques08">Bottom-up<br>
+							<input type="radio" value="83" name="ques08">Right-left<br>
+							<input type="radio" value="84" name="ques08">Left-right<br>
+						</div>
+					</div>
+					<hr>
+					<div>
+						<li id=9>Which of the following concepts means determining at runtime what method to invoke?</li>
+						<div>
+							<input type="radio" value="91" name="ques09">Data hiding<br>
+							<input type="radio" value="92" name="ques09">Dynamic Typing<br>
+							<input type="radio" value="93" name="ques09">Dynamic binding<br>
+							<input type="radio" value="94" name="ques09">Dynamic loading<br>
+						</div>
+					</div>
+					<hr>
+					<div>
+						<li id="10">Which of the following is not the member of class?</li>
+						<div>
+							<input type="radio" value="101" name="ques10">Static function<br>
+							<input type="radio" value="102" name="ques10">Friend function<br>
+							<input type="radio" value="103" name="ques10">Const function<br>
+							<input type="radio" value="104" name="ques10">Virtual function<hr>
+							<div align="center">
+								<button onclick="eval_ans()" id="button_lang" value="C++" style="width: 300px; font-weight: bolder; font-size: 200%;margin-top: 10px; background-color: #6699ff; border-radius: 10px;">
+									Finish Test !!!
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</ol>		
+		</div>
+	</div>
+	<footer class="foot">
+		<p><b>Developed by :</b> Arvind | Richa || LGSIA-Model Team</p>
+	</footer>
+	<script type="text/javascript" src="eval_ans.js"></script>
+	<script type="text/javascript" src="timer.js"></script>
+</body>
+</html>
