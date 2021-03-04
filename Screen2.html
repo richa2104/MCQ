@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Screen2</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="common.css">
+	<style>
+		li{
+			margin-bottom: 15px;
+		}
+	</style>	
+</head>
+<body class="back">
+	<header>
+		<div align="center" class="head">
+			<h1 style="margin-top: 0.5px; font-weight: bold;">Online MCQ Test</h1>
+		</div>
+	</header>
+	<div class="container" align="center">
+		<div class="row">
+			<h1 class="blink" style="font-size: 350%; margin-bottom: 10px; margin-top: 25px;"><u>Test Instructions</u></h1>
+			<div>
+				<ul class="ins" style="text-align: left; font-size: 150%;">
+					<li>The duration of this exam is <b>05 minutes</b>.</li>
+					<li>Allow adequate time to complete this exam in <b>one sitting before the due date and time</b>.</li>
+					<li>Late submissions <b>will not/may not be accepted</b>.</li>
+					<li>There are <b>10 questions</b> in this exam and will be presented <b>one at a time/all at once</b>.</li>
+					<li>Each question is worth the <b>same</b> marks. </li>
+					<li><b>Misconduct action</b> will be taken against you if you breach test rules.</li>
+					<li>You will need to be in a <b>quiet space</b> for the duration of your exam <b>with no interruptions</b>.</li>
+					<li>The student may not use their textbook, notes, or receive help from a proctor or any other outside source.</li>
+				</ul>
+			</div>
+			<div>
+				<button class="blink" onclick="start_test()" style="width: 300px; font-weight: bolder; font-size: 300%; margin-top: 5px; margin-bottom: 5px; background-color: #6699ff; border-radius: 10px;">
+				Start Test !!
+				</button>
+			</div>
+		</div>
+	</div>
+	<footer class="foot">
+		<p><b>Developed by :</b> Arvind | Richa || LGSIA-Model Team</p>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="index.js"></script>
+	<script type="text/javascript">
+		let get1 = JSON.parse(localStorage.getItem('Language5416'));
+	    console.log(get1);
+	</script>
+</body>
+</html>

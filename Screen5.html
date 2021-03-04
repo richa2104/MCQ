@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Screen5</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="common.css">
+	<style>
+		.res{
+			font-size: 250%;
+			text-align: center;
+			font-weight: 200;
+			width: 60%;
+			padding: 20px 0 10px 0;
+		}
+		label{
+			margin-bottom: 15px;
+		}
+	</style>
+</head>
+<body class="back" style="background-image: url(result.jpg); background-position: 22% 22%;">
+	<header>
+		<div align="center" class="head">
+			<h1 style="margin-top: 0.5px; font-weight: bold;">Online MCQ Test</h1>
+		</div>
+	</header>
+	<div class="container" align="center" style="padding: 30px 0px 20px 0px; opacity: 0.9;">
+		<div class="row">
+			<h1 class="blink" style="color: #362d67; font-weight: bolder;"><u id="choose_lang"></u></h1>
+			<div class="res">
+				<label id="right" style="color: green;"></label><br>
+				<label id="wrong" style="color: red;"></label><br>
+				<label id="unatt"></label><br>
+				<img src="thank.gif" style="border-radius: 15px;">
+			</div>
+		</div>
+	</div>
+	<footer class="foot">
+		<p><b>Developed by :</b> Arvind | Richa || LGSIA-Model Team</p>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="evaluate.js"></script>
+</body>
+</html>
